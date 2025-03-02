@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TODOListApp';
+  TODOList = ['Exercise', 'Breakfast', 'Work'];
+  task : string = '';
+
+  addTODO(taskValue: any){
+  console.log(taskValue);
+  this.TODOList.push(taskValue.value);
+  }
 }
